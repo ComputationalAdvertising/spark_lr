@@ -107,10 +107,9 @@ object LR_LBFGS extends Logging {
     resultStr += s"Testing recall is: recall_value\n"
     resultStr += s"F1 score is: f1_score_value\n"
 
-    val save_date = params.date
     val hadoopConf = new Configuration()
     val fs = FileSystem.get(URI.create(params.modelPath), hadoopConf)
-    val dst = new Path(params.modelPath + "/model_$save_date.txt")
+    val dst = new Path(params.modelPath + "/model.txt")
     val out = fs.create(dst)
     out.write(resultStr.getBytes("UTF-8"))
 
