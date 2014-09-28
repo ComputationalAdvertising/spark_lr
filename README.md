@@ -1,7 +1,7 @@
-spark_logistic regression using lbfgs
-================
+spark logistic regression using lbfgs
+===========================================
 
-这里使用LBFGS算法训练LR模型，主要包括3个部分：
-1. lbfgs和lr的封装；
-2. 程序与spark集群环境的交互（参数解析）；
-3. LR模型的保存与统计/评估指标
+The purpose of this project is to training logistic regression model using lbfgs algorithm on spark platform. It mainly contains three parts:
+1. 对lbfgs算法和lr模型的封装
+2. 代码与spark集群环境的交互（参数解析）
+3. LR模型参数以及评估方法的保存；
